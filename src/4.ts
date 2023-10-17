@@ -30,12 +30,10 @@ abstract class Hous {
 }
 
 class MyHouse extends Hous {
-  openDoor(key: Key): boolean {
+  openDoor(key: Key): void {
     if (key.getSignature() === this.key.getSignature()) {
       this.door = true;
-      return this.door;
     }
-    return false;
   }
 }
 
