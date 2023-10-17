@@ -22,11 +22,11 @@ abstract class Hous {
     this.door = false;
   }
   comeIn(person: Person): void {
-    if ((this.door = true)) {
+    if ((this.door === true)) {
       this.tenants.push(person);
     }
   }
-  abstract openDoor(key: Key): boolean;
+  abstract openDoor(key: Key): void;
 }
 
 class MyHouse extends Hous {
